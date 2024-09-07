@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Festival - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+</head>
+<style>
+    /* General Styles */
+.btn, .btn1 {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #94126d;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover, .btn1:hover {
+    background-color: #990c82;
+}
+
+h1, h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+h1.heading {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Home Section */
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('images/back.jpg') no-repeat center center;
+    background-size: cover;
+    color: rgb(243, 238, 242);
+    text-align: center;
+}
+
+.home .content h3 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* Services Section */
+.services {
+    padding: 3rem 9%;
+    background-color: #fff;
+}
+
+.services .slide {
+    position: relative;
+    height: 35rem;
+    overflow: hidden;
+    margin-bottom: 4rem;
+}
+
+.services .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.2s ease;
+}
+
+.services .slide .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.2s ease;
+}
+
+.services .slide:hover .content {
+    transform: translateY(0);
+}
+
+.services .slide .content h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.services .slide .content p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    padding: 1rem 0;
+}
+</style>
+<body>
+
+    <!-- header -->
+    <header class="header">
+        <a href="index.html" class="logo">Festival</a>
+        <button id="menu-toggle" aria-label="Toggle navigation">Menu</button>
+        <nav id="navbar" class="navbar">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="portfolio.html" class="nav-link">Portfolio</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+    </header>
+
+    <!-- home section -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Welcome to a Celebration of Music, Dance, and Modeling Festival</h3>
+            <a href="about.html" class="btn">See More Info</a>
+        </div>
+    </section>
+
+    <!-- services section -->
+    <section class="services">
+        <h1 class="heading">Our Services</h1>
+        <div class="swiper services-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide">
+                    <img src="images/social2.jpg" alt="Social Media Coverage">
+                    <div class="content">
+                        <h3>Social Media Coverage</h3>
+                        <p>Our social media coverage keeps you connected to the festival's excitement in real-time. Through dynamic updates, live feeds, and behind-the-scenes glimpses across our official channels, we ensure you don’t miss a moment of the action.</p>
+                        <a href="about.html" class="btn1">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <img src="images/register.jpg" alt="Ticketing and Registration">
+                    <div class="content">
+                        <h3>Ticketing and Registration</h3>
+                        <p>Our ticketing and registration services streamline the festival experience, offering a seamless process for purchasing and managing tickets.</p>
+                        <a href="about.html" class="btn1">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <img src="images/park1.jpg" alt="Transportation and Parking">
+                    <div class="content">
+                        <h3>Transportat
+                        <p>Our transportation and parking services are designed to make your festival experience hassle-free.</p>
+                        <a href="about.html" class="btn1">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <img src="images/vid2.jpg" alt="Photography and Videography">
+                    <div class="content">
+                        <h3>Photography and Videography</h3>
+                        <p>Our professional photography and videography services capture every memorable moment of the festival, ensuring that the excitement and energy are preserved for years to come.</p>
+                        <a href="about.html" class="btn1">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <img src="images/pro1.jpg" alt="Brand Promotion">
+                    <div class="content">
+                        <h3>Brand Promotion</h3>
+                        <p>Our brand promotion services offer a prime opportunity for sponsors to enhance their visibility and connect with a diverse audience.</p>
+                        <a href="about.html" class="btn1">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <img src="images/food1.jpg" alt="Food and Beverage">
+                    <div class="content">
+                        <h3>Food and Beverage</h3>
+                        <p>Our food and beverage services elevate the festival experience by offering a diverse range of culinary delights to suit every taste.</p>
+                        <a href="about.html" class="btn1">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <img src="images/art2.jpg" alt="Artist and Talent Management">
+                    <div class="content">
+                        <h3>Artist and Talent Management</h3>
+                        <p>Our artist and talent management services are dedicated to providing a smooth and supportive experience for performers. </p>
+                        <a href="about.html" class="btn1">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3><i class="fas fa-user"></i> Planner</h3>
+                <p> From initial concept to final execution, I ensure every aspect is tailored to perfection</p>
+            </div>
+            <div class="box">
+                <h3>Our Services</h3>
+                <a href="#" class="fas fa-chevron-right">Marketing and Promotion</a>
+                <a href="#" class="fas fa-chevron-right">Guest Management</a>
+                <a href="#" class="fas fa-chevron-right">Event Design and Theme</a>
+                <a href="#" class="fas fa-chevron-right">Venue Selection</a>
+            </div>
+            <div class="box">
+                <h3>Contact Us</h3>
+                <a href="#" class="fas fa-phone">+254-284-282-</a>
+                <a href="#" class="fas fa-envelope">info@eventplanner.com</a>
+            </div>
+            <div class="box">
+                <h3>Follow Us</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </div>
+        <div class="credit">&copy; copyright @ 2024 by <span>Nelma</span></div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.services-slider', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 5000,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                }
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
