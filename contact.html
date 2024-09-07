@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Festival</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .contact {
+            padding: 3rem 9%;
+            text-align: center;
+        }
+
+        .contact .heading {
+            font-size: 3rem;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+        }
+
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #f4f4f4;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact .form-group {
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+
+        .contact .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: .5rem;
+        }
+
+        .contact .form-group input,
+        .contact .form-group textarea {
+            width: 100%;
+            padding: .8rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        .contact .form-group textarea {
+            resize: vertical;
+        }
+
+        .contact .btn {
+            padding: 1rem 2.5rem;
+            background: #ac0b9e;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        .contact .btn:hover {
+            background: #bb0ca4;
+        }
+
+        .contact .contact-info {
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .contact .contact-info h3 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .contact .contact-info p {
+            margin-bottom: .5rem;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- header -->
+    <header class="header">
+        <a href="index.html" class="logo">Festival</a>
+        <button id="menu-toggle" aria-label="Toggle navigation">Menu</button>
+        <nav id="navbar" class="navbar">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="portfolio.html" class="nav-link">Portfolio</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+    </header>
+
+    <!-- contact section -->
+    <section class="contact">
+        <h2 class="heading">Contact Us</h2>
+        <form action="contact.php" method="post" id="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+        
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+        
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+        
+            <button type="submit" class="btn">Send</button>
+        </form>
+
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p><strong>Phone:</strong> +254-284-282-</p>
+            <p><strong>Address:</strong> 123 Festival Lane, Music City, FM 12345</p>
+        </div>
+    </section>
+
+    <!-- footer section -->
+    <footer class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3><i class="fas fa-user"></i> Planner</h3>
+                <p>From initial concept to final execution, I ensure every aspect is tailored to perfection</p>
+            </div>
+
+            <div class="box">
+                <h3>Our Services</h3>
+                <a href="#" class="fas fa-chevron-right">Marketing and Promotion</a>
+                <a href="#" class="fas fa-chevron-right">Guest Management</a>
+                <a href="#" class="fas fa-chevron-right">Event Design and Theme</a>
+                <a href="#" class="fas fa-chevron-right">Venue Selection</a>
+            </div>
+
+            <div class="box">
+                <h3>Contact Us</h3>
+                <a href="#" class="fas fa-phone">+254-284-282-</a>
+                <a href="#" class="fas fa-envelope">info@eventplanner.com</a>
+            </div>
+
+            <div class="box">
+                <h3>Follow Us</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </div>
+        <a href="/login.html" class="login-link">Login</a>
+        <div class="credit">&copy; copyright @ 2024 by <span>Nelma</span></div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
