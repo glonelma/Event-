@@ -10,6 +10,27 @@
 </head>
 <style>
     /* General Styles */
+
+    /* Button Styles */
+.header .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #94126d;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.header .btn:hover {
+    background-color: #990c82;
+}
+
+
 .btn, .btn1 {
     display: inline-block;
     padding: 10px 20px;
@@ -44,7 +65,7 @@ h1.heading {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url('images/back.jpg') no-repeat center center;
+    background: url('images/b1.jpg') no-repeat center center;
     background-size: cover;
     color: rgb(243, 238, 242);
     text-align: center;
@@ -107,16 +128,20 @@ h1.heading {
 <body>
 
     <!-- header -->
-    <header class="header">
-        <a href="index.html" class="logo">Festival</a>
-        <button id="menu-toggle" aria-label="Toggle navigation">Menu</button>
-        <nav id="navbar" class="navbar">
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="about.html" class="nav-link">About</a>
-            <a href="portgifolio.html" class="nav-link">Portfolio</a>
-            <a href="contact.html" class="nav-link">Contact</a>
-        </nav>
-    </header>
+<header class="header">
+    <a href="index.html" class="logo">Festival</a>
+    <button id="menu-toggle" aria-label="Toggle navigation">Menu</button>
+    <nav id="navbar" class="navbar">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <!-- New Login and Register Buttons -->
+        <a href="login.html" class="btn">Login</a>
+        <a href="register.html" class="btn">Register</a>
+    </nav>
+</header>
+
 
     <!-- home section -->
     <section class="home" id="home">
@@ -124,7 +149,7 @@ h1.heading {
             <h3>Welcome to a Celebration of Music,Dance,and Modeling Festival</h3>
             <a href="about.html" class="btn">See More Info</a>
         </div>
-        
+
     </section>
 
     <!-- services section -->
@@ -146,15 +171,6 @@ h1.heading {
                     <div class="content">
                         <h3>Ticketing and Registration</h3>
                         <p>Our ticketing and registration services streamline the festival experience, offering a seamless process for purchasing and managing tickets.</p>
-                        <a href="about.html" class="btn1">Learn More</a>
-                    </div>
-                </div>
-
-                <div class="swiper-slide slide">
-                    <img src="images/park1.jpg" alt="Transportation and Parking">
-                    <div class="content">
-                        <h3>Transportat
-                        <p>Our transportation and parking services are designed to make your festival experience hassle-free.</p>
                         <a href="about.html" class="btn1">Learn More</a>
                     </div>
                 </div>
@@ -195,7 +211,7 @@ h1.heading {
                     </div>
                 </div>
             </div>
-            Add pagination
+            <!-- Add pagination -->
             <div class="swiper-pagination"></div>
         </div>
     </section>
