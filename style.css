@@ -1,3 +1,4 @@
+/* Reset and global styles */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,6 +10,7 @@ html, body {
     font-size: 16px;
     line-height: 1.5;
 }
+
 /* Flexbox layout for the body */
 body {
     display: flex;
@@ -103,11 +105,8 @@ body {
     margin-top: 1rem;
 }
 
-/* Responsive design for smaller screens */
-@media (max-width: 768px) {
-    .heading{
-        font-size: 3.5rem;
-    }
+/* Responsive design for tablets and smaller devices */
+@media (max-width: 1024px) {
     .header {
         flex-direction: column;
         align-items: flex-start;
@@ -132,18 +131,54 @@ body {
         align-items: flex-start;
     }
 
+    .home .content h3 {
+        font-size: 2em;
+    }
 
-.home .content h3 {
-    font-size: 1.5em;
+    .swiper-slide img {
+        height: 180px; /* Adjust height as needed */
+    }
 }
 
-.swiper-slide img {
-    height: 150px; /* Adjust height as needed */
-}
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+    .heading {
+        font-size: 3.5rem;
+    }
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    .header .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        display: none;
+    }
+
+    /* Show navbar when active (you may need to toggle this with JavaScript) */
+    .header .navbar.active {
+        display: flex;
+    }
+    .content {
+        padding: 15px;
+    }
+    .footer .box-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .home .content h3 {
+        font-size: 1.5em;
+    }
+
+    .swiper-slide img {
+        height: 150px; /* Adjust height as needed */
+    }
 }
 
-
-/* For mobile devices, ensure text sizes and padding are manageable */
+/* For very small mobile devices */
 @media (max-width: 480px) {
     .header .logo {
         font-size: 20px;
@@ -189,4 +224,12 @@ body {
     }
 }
 
-
+/* Landscape mode on mobile devices */
+@media (orientation: landscape) and (max-width: 768px) {
+    .home .content h3 {
+        font-size: 1.5em;
+    }
+    .swiper-slide img {
+        height: 150px; /* Adjust height as needed */
+    }
+}
