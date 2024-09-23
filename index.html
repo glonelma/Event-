@@ -7,127 +7,134 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <style>
+        /* General Styles */
+
+        /* Button Styles */
+        .header .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-left: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #94126d;
+            color: #fff;
+            font-weight: bold;
+            text-align: center;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+
+        .header .btn:hover {
+            background-color: #990c82;
+        }
+
+        .btn, .btn1 {
+            display: inline-block;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #94126d;
+            color: #fff;
+            font-weight: bold;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover, .btn1:hover {
+            background-color: #990c82;
+        }
+
+        h1, h3 {
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+        }
+
+        h1.heading {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Home Section */
+        .home {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url('images/b1.jpg') no-repeat center center;
+            background-size: cover;
+            color: rgb(243, 238, 242);
+            text-align: center;
+        }
+
+        .home .content h3 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 3rem 9%;
+            background-color: #fff;
+        }
+
+        .services .slide {
+            position: relative;
+            height: 35rem;
+            overflow: hidden;
+            margin-bottom: 4rem;
+        }
+
+        .services .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.2s ease;
+        }
+
+        .services .slide .content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            padding: 2rem;
+            text-align: center;
+            transform: translateY(100%);
+            transition: transform 0.2s ease;
+        }
+
+        .services .slide:hover .content {
+            transform: translateY(0);
+        }
+
+        .services .slide .content h3 {
+            font-size: 2rem;
+            text-transform: uppercase;
+        }
+
+        .services .slide .content p {
+            font-size: 1.5rem;
+            line-height: 1.6;
+            padding: 1rem 0;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            display: none; /* Initially hide the navbar */
+        }
+        .navbar.active {
+            display: block; /* Show the navbar when active */
+        }
+    </style>
 </head>
-<style>
-    /* General Styles */
-
-    /* Button Styles */
-.header .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-left: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #94126d;
-    color: #fff;
-    font-weight: bold;
-    text-align: center;
-    transition: background-color 0.3s ease;
-    text-decoration: none;
-}
-
-.header .btn:hover {
-    background-color: #990c82;
-}
-
-
-.btn, .btn1 {
-    display: inline-block;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #94126d;
-    color: #fff;
-    font-weight: bold;
-    text-align: center;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover, .btn1:hover {
-    background-color: #990c82;
-}
-
-h1, h3 {
-    margin: 0;
-    padding: 0;
-    font-weight: bold;
-}
-
-h1.heading {
-    font-size: 2.5em;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Home Section */
-.home {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: url('images/b1.jpg') no-repeat center center;
-    background-size: cover;
-    color: rgb(243, 238, 242);
-    text-align: center;
-}
-
-.home .content h3 {
-    font-size: 3rem;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-}
-
-/* Services Section */
-.services {
-    padding: 3rem 9%;
-    background-color: #fff;
-}
-
-.services .slide {
-    position: relative;
-    height: 35rem;
-    overflow: hidden;
-    margin-bottom: 4rem;
-}
-
-.services .slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.2s ease;
-}
-
-.services .slide .content {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    padding: 2rem;
-    text-align: center;
-    transform: translateY(100%);
-    transition: transform 0.2s ease;
-}
-
-.services .slide:hover .content {
-    transform: translateY(0);
-}
-
-.services .slide .content h3 {
-    font-size: 2rem;
-    text-transform: uppercase;
-}
-
-.services .slide .content p {
-    font-size: 1.5rem;
-    line-height: 1.6;
-    padding: 1rem 0;
-}
-</style>
 <body>
 
-    <!-- header -->
+ <!-- header -->
 <header class="header">
     <a href="index.html" class="logo">Festival</a>
     <button id="menu-toggle" aria-label="Toggle navigation">Menu</button>
@@ -139,17 +146,15 @@ h1.heading {
         <!-- New Login and Register Buttons -->
         <a href="login.html" class="btn">Login</a>
         <a href="register.html" class="btn">Register</a>
-    </nav>
+    </nav> 
 </header>
-
 
     <!-- home section -->
     <section class="home" id="home">
         <div class="content">
-            <h3>Welcome to a Celebration of Music,Dance,and Modeling Festival</h3>
+            <h3>Welcome to a Celebration of Music, Dance, and Modeling Festival</h3>
             <a href="about.html" class="btn">See More Info</a>
         </div>
-
     </section>
 
     <!-- services section -->
@@ -266,9 +271,16 @@ h1.heading {
                 }
             }
         });
+
+        // Menu toggle functionality
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const navbar = document.getElementById('navbar');
+            navbar.classList.toggle('active'); // Toggle the 'active' class
+        });
     </script>
 </body>
 </html>
+
 
 
 
