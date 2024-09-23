@@ -1,57 +1,66 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Music Festival</title>
-     <link rel="stylesheet" href="style.css">
-     <!-- Font Awesome for icons -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-     <style>
-        .hero{
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Festival</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero {
             width: 100%;
             min-height: 100vh;
         }
-        .container{
+
+        .container {
             width: 90%;
             display: block;
             margin: auto;
             padding-top: 100px;
         }
-        .article{
+
+        .article {
             float: left;
             width: 55%;
             padding-right: 25px;
         }
-        .image-section{
+
+        .image-section {
             float: right;
             width: 45%;
         }
-        .image-section img{
+
+        .image-section img {
             width: 100%;
             height: auto;
         }
-        .article .title h1{
+
+        .article .title h1 {
             text-transform: uppercase;
             font-size: 45px;
             font-weight: 300;
         }
-        .article .content h3{
+
+        .article .content h3 {
             margin-top: 30px;
             color: rgb(78, 4, 78);
             font-size: 22px;
             font-weight: 500;
         }
-        .article .content p{
+
+        .article .content p {
             margin-top: 10px;
             font-size: 19px;
             line-height: 1.5;
             color: rgb(223, 56, 187);
         }
-        .article .content .button{
+
+        .article .content .button {
             margin-top: 45px;
         }
-        .article .content .button a{
+
+        .article .content .button a {
             background-color: rgb(168, 106, 158);
             padding: 10px 18px;
             text-decoration: none;
@@ -61,73 +70,123 @@
             letter-spacing: 1.5px;
             font-weight: 400;
         }
-        .article .content .button a:hover{
+
+        .article .content .button a:hover {
             background-color: rgb(173, 48, 152);
             transition: 0.5s ease;
         }
-         .team .box-container {
-             display: grid;
-             grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-             gap: 1.5rem;
-         }
-         .team .box-container .box {
-             border-radius: 0.5rem;
-             background: var(--transparent-white);
-             padding: 2rem;
-             text-align: center;
-             box-shadow: var(--box-shadow);
-         }
-         .team .box-container .box img {
-             border-radius: 50%;
-             height: 15rem;
-             width: 15rem;
-             object-fit: cover;
-             margin-bottom: 1rem;
-         }
-         .team .box-container .box h3 {
-             font-size: 2rem;
-             color: black;
-             text-transform: capitalize;
-         }
-         .team .box-container .box p {
-             font-size: 1rem;
-             color: rgb(211, 31, 166);
-         }
-         .team .box-container .box .share {
-             margin-top: 0.5rem;
-         }
-         .team .box-container .box .share a {
-             height: 4rem;
-             width: 4rem;
-             line-height: 4rem;
-             font-size: 2rem;
-             background: black;
-             border-radius: 0.5rem;
-             color: white;
-             margin: 0.5rem;
-             display: inline-block;
-             text-align: center;
-         }
-         .team .box-container .box .share a:hover {
-             background: rgb(84, 173, 233);
-         }
-     </style>
- </head>
- <body>
- 
-     <!-- header section -->
-     <header class="header">
-         <a href="index.html" class="logo">Festival</a>
-         <button id="menu-toggle" aria-label="Toggle navigation">Menu</button>
-         <nav id="navbar" class="navbar">
-             <a href="index.html" class="nav-link">Home</a>
-             <a href="about.html" class="nav-link">About</a>
-             <a href="portfolio.html" class="nav-link">Portfolio</a>
-             <a href="contact.html" class="nav-link">Contact</a>
-         </nav>
-     </header>
- 
-     <!-- about us section -->
+
+        .team .box-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+            gap: 1.5rem;
+        }
+
+        .team .box-container .box {
+            border-radius: 0.5rem;
+            background: var(--transparent-white);
+            padding: 2rem;
+            text-align: center;
+            box-shadow: var(--box-shadow);
+        }
+
+        .team .box-container .box img {
+            border-radius: 50%;
+            height: 15rem;
+            width: 15rem;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+
+        .team .box-container .box h3 {
+            font-size: 2rem;
+            color: black;
+            text-transform: capitalize;
+        }
+
+        .team .box-container .box p {
+            font-size: 1rem;
+            color: rgb(211, 31, 166);
+        }
+
+        .team .box-container .box .share {
+            margin-top: 0.5rem;
+        }
+
+        .team .box-container .box .share a {
+            height: 4rem;
+            width: 4rem;
+            line-height: 4rem;
+            font-size: 2rem;
+            background: black;
+            border-radius: 0.5rem;
+            color: white;
+            margin: 0.5rem;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .team .box-container .box .share a:hover {
+            background: rgb(84, 173, 233);
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .article {
+                float: none;
+                width: 100%;
+                padding-right: 0;
+            }
+
+            .image-section {
+                float: none;
+                width: 100%;
+                margin-top: 20px;
+            }
+
+            .article .title h1 {
+                font-size: 36px;
+            }
+
+            .article .content h3 {
+                font-size: 20px;
+            }
+
+            .article .content p {
+                font-size: 18px;
+            }
+
+            .article .content .button a {
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .article .content p {
+                font-size: 16px;
+            }
+
+            .team .box-container .box h3 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- header section -->
+    <header class="header">
+        <a href="index.html" class="logo">Festival</a>
+        <button id="menu-toggle" aria-label="Toggle navigation">Menu</button>
+        <nav id="navbar" class="navbar">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="portfolio.html" class="nav-link">Portfolio</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+    </header>
+
+    <!-- about us section -->
     <div class="hero">
         <div class="container">
             <div class="article">
@@ -136,7 +195,7 @@
                 </div>
                 <div class="content">
                     <h3>Celebration</h3>
-                    <p> Welcome to the nelma's festival, where music meets magic! Our team is a passionate
+                    <p>Welcome to the nelma's festival, where music meets magic! Our team is a passionate
                         group of event enthusiasts dedicated to creating unforgettable experiences.
                         From booking world-class artists to ensuring every detail is perfect,
                         we work tirelessly to bring you an extraordinary celebration of music and community.
@@ -153,82 +212,80 @@
             </div>
         </div>
     </div>
-     
-     <section class="team">
-         <h1 class="heading">Our Team</h1>
-         <div class="box-container">
-             <div class="box">
-                 <img src="images/art1.jpg" alt="Ruth Tarma">
-                 <h3>Emma Johnson</h3>
-                 <p>Festival Director</p>
-                 <div class="share">
-                     <a href="#" class="fab fa-facebook-f" aria-label="Facebook"></a>
-                     <a href="#" class="fab fa-twitter" aria-label="Twitter"></a>
-                     <a href="#" class="fab fa-linkedin" aria-label="LinkedIn"></a>
-                     <a href="#" class="fab fa-instagram" aria-label="Instagram"></a>
-                 </div>
-             </div>
- 
-             <div class="box">
-                 <img src="images/m3.jpg" alt="Brandon Ochieng">
-                 <h3>Liam Rodriguez</h3>
-                 <p>Music Coordinator</p>
-                 <div class="share">
-                     <a href="#" class="fab fa-facebook-f" aria-label="Facebook"></a>
-                     <a href="#" class="fab fa-twitter" aria-label="Twitter"></a>
-                     <a href="#" class="fab fa-linkedin" aria-label="LinkedIn"></a>
-                     <a href="#" class="fab fa-instagram" aria-label="Instagram"></a>
-                 </div>
-             </div>
- 
-             <div class="box">
-                 <img src="images/m2.jpg" alt="Teresiah Kimani">
-                 <h3>Olivia Martinez</h3>
-                 <p>Volunteer Coordinator</p>
-                 <div class="share">
-                     <a href="#" class="fab fa-facebook-f" aria-label="Facebook"></a>
-                     <a href="#" class="fab fa-twitter" aria-label="Twitter"></a>
-                     <a href="#" class="fab fa-linkedin" aria-label="LinkedIn"></a>
-                     <a href="#" class="fab fa-instagram" aria-label="Instagram"></a>
-                 </div>
-             </div>
- 
-         </div>
-     </section>
- 
-     <!-- footer sect -->
-     <footer class="footer">
-         <div class="box-container">
-             <div class="box">
-                 <h3><i class="fas fa-user"></i> Planner</h3>
-                 <p>From initial concept to final execution, I ensure every aspect is tailored to perfection</p>
-             </div>
- 
-             <div class="box">
-                 <h3>Our Services</h3>
-                 <a href="#" class="fas fa-chevron-right">Marketing and Promotion</a>
-                 <a href="#" class="fas fa-chevron-right">Guest Management</a>
-                 <a href="#" class="fas fa-chevron-right">Event Design and Theme</a>
-                 <a href="#" class="fas fa-chevron-right">Venue Selection</a>
-             </div>
- 
-             <div class="box">
-                 <h3>Contact Us</h3>
-                 <a href="#" class="fas fa-phone">+254-284-282-</a>
-                 <a href="#" class="fas fa-envelope">info@eventplanner.com</a>
-             </div>
- 
-             <div class="box">
-                 <h3>Follow Us</h3>
-                 <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
-                 <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
-                 <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
-             </div>
-         </div>
-         <div class="credit">&copy; copyright @ 2024 by <span>Nelma</span></div>
-     </footer>
- 
-     <script src="script.js"></script>
- </body>
- </html>
- 
+
+    <section class="team">
+        <h1 class="heading">Our Team</h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="images/art1.jpg" alt="Emma Johnson">
+                <h3>Emma Johnson</h3>
+                <p>Festival Director</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f" aria-label="Facebook"></a>
+                    <a href="#" class="fab fa-twitter" aria-label="Twitter"></a>
+                    <a href="#" class="fab fa-linkedin" aria-label="LinkedIn"></a>
+                    <a href="#" class="fab fa-instagram" aria-label="Instagram"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/m3.jpg" alt="Liam Rodriguez">
+                <h3>Liam Rodriguez</h3>
+                <p>Music Coordinator</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f" aria-label="Facebook"></a>
+                    <a href="#" class="fab fa-twitter" aria-label="Twitter"></a>
+                    <a href="#" class="fab fa-linkedin" aria-label="LinkedIn"></a>
+                    <a href="#" class="fab fa-instagram" aria-label="Instagram"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/m2.jpg" alt="Olivia Martinez">
+                <h3>Olivia Martinez</h3>
+                <p>Volunteer Coordinator</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f" aria-label="Facebook"></a>
+                    <a href="#" class="fab fa-twitter" aria-label="Twitter"></a>
+                    <a href="#" class="fab fa-linkedin" aria-label="LinkedIn"></a>
+                    <a href="#" class="fab fa-instagram" aria-label="Instagram"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section -->
+    <footer class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3><i class="fas fa-user"></i> Planner</h3>
+                <p>From initial concept to final execution, I ensure every aspect is tailored to perfection</p>
+            </div>
+
+            <div class="box">
+                <h3>Our Services</h3>
+                <a href="#" class="fas fa-chevron-right">Marketing and Promotion</a>
+                <a href="#" class="fas fa-chevron-right">Guest Management</a>
+                <a href="#" class="fas fa-chevron-right">Event Design and Theme</a>
+                <a href="#" class="fas fa-chevron-right">Venue Selection</a>
+            </div>
+
+            <div class="box">
+                <h3>Contact Us</h3>
+                <a href="#" class="fas fa-phone">+254-284-282-</a>
+                <a href="#" class="fas fa-envelope">info@eventplanner.com</a>
+            </div>
+
+            <div class="box">
+                <h3>Follow Us</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </div>
+        <div class="credit">&copy; copyright @ 2024 by <span>Nelma</span></div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
