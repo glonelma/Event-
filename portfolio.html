@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>Music Festival - Home</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -53,6 +54,109 @@
 <body>
 
     <!-- header -->
+=======
+    <title>Music Festival</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Slideshow container */
+        .slideshow-container {
+            position: relative;
+            max-width: 80%;
+            margin: auto;
+            overflow: hidden;
+            border: 2px solid #ddd; /* Add a border to the slideshow container */
+            border-radius: 10px; /* Rounded corners for the slideshow */
+            background: #f4f4f4; /* Light background for better contrast */
+            margin-bottom: 20px; /* Space below the slideshow */
+        }
+
+        /* Slide styling */
+        .mySlides {
+            display: none; /* Hide slides by default */
+            width: 100%;
+            position: relative; /* Position relative for absolute positioning of text */
+        }
+
+        /* Image styling */
+        .mySlides img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Text on slides */
+        .text {
+            color: #333;
+            font-size: 1rem;
+            padding: 8px 12px;
+            background: rgba(255, 255, 255, 0.8);
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            border-top: 1px solid #ddd; /* Separator line */
+        }
+
+        /* Dots for slideshow navigation */
+        .dot-container {
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .dot {
+            height: 10px;
+            width: 10px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active {
+            background-color: #717171;
+        }
+
+        /* Navigation buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: #333;
+            font-weight: bold;
+            font-size: 18px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Reduce image size for the slides */
+        .mySlides img {
+            max-height: 300px; /* Adjust as needed */
+            object-fit: cover; /* Ensure images cover the slide area */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- header section -->
+>>>>>>> origin/main
     <header class="header">
         <a href="index.html" class="logo">Festival</a>
         <button id="menu-toggle" aria-label="Toggle navigation">Menu</button>
@@ -63,6 +167,7 @@
             <a href="contact.html" class="nav-link">Contact</a>
         </nav>
     </header>
+<<<<<<< HEAD
 
     <div class="category">
         <h2>Dance Events</h2>
@@ -127,3 +232,213 @@
 <script src="script.js"></script>
 </body>
 </html>
+=======
+    
+    <div class="content">
+        
+        <!-- Slideshow for Modeling -->
+        <h2>Modeling</h2>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="images/mod1.jpg" alt="Modeling Image 1">
+                <div class="text">Modeling Event 1</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="images/mod2.jpg" alt="Modeling Image 2">
+                <div class="text">Modeling Event 2</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="images/mod3.jpg" alt="Modeling Image 3">
+                <div class="text">Modeling Event 3</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="images/mod4.jpg" alt="Modeling Image 4">
+                <div class="text">Modeling Event 4</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="images/mod5.jpg" alt="Modeling Image 5">
+                <div class="text">Modeling Event 5</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="images/mod6.jpg" alt="Modeling Image 6">
+                <div class="text">Modeling Event 6</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+        </div>
+        <br>
+        <div class="dot-container">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <!-- Slideshow for Dance -->
+        <h2>Dance</h2>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="images/dac1.jpg" alt="Dance Image 1">
+                <div class="text">Dance Event 1</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="images/dac2.jpg" alt="Dance Image 2">
+                <div class="text">Dance Event 2</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="images/dac3.jpg" alt="Dance Image 3">
+                <div class="text">Dance Event 3</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="images/dac4.jpg" alt="Dance Image 4">
+                <div class="text">Dance Event 4</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="images/dac5.jpg" alt="Dance Image 5">
+                <div class="text">Dance Event 5</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="images/dac6.jpg" alt="Dance Image 6">
+                <div class="text">Dance Event 6</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+        </div>
+        <br>
+        <div class="dot-container">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <!-- Slideshow for Music -->
+        <h2>Music</h2>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="images/m1.jpg" alt="Music Image 1">
+                <div class="text">Music Event 1</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="images/m2.jpg" alt="Music Image 2">
+                <div class="text">Music Event 2</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="images/m3.jpg" alt="Music Image 3">
+                <div class="text">Music Event 3</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="images/m4.jpg" alt="Music Image 4">
+                <div class="text">Music Event 4</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="images/m5.jpg" alt="Music Image 5">
+                <div class="text">Music Event 5</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="images/m6.jpg" alt="Music Image 6">
+                <div class="text">Music Event 6</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+        </div>
+        <br>
+        <div class="dot-container">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+
+    <!-- footer section -->
+    <footer class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3><i class="fas fa-user"></i> Planner</h3>
+                <p>From initial concept to final execution, I ensure every aspect is tailored to perfection</p>
+            </div>
+
+            <div class="box">
+                <h3>Our Services</h3>
+                <a href="#" class="fas fa-chevron-right">Marketing and Promotion</a>
+                <a href="#" class="fas fa-chevron-right">Guest Management</a>
+                <a href="#" class="fas fa-chevron-right">Event Design and Theme</a>
+                <a href="#" class="fas fa-chevron-right">Venue Selection</a>
+            </div>
+
+            <div class="box">
+                <h3>Contact Us</h3>
+                <a href="#" class="fas fa-phone">+254-284-282-</a>
+                <a href="#" class="fas fa-envelope">info@eventplanner.com</a>
+            </div>
+
+            <div class="box">
+                <h3>Follow Us</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </div>
+        <div class="credit">&copy; copyright @ 2024 by <span>Nelma</span></div>
+    </footer>
+
+    <script>
+        let slideIndices = [0, 0, 0]; // Initialize indices for each slideshow
+
+        function showSlides(slideIndex, n) {
+            let i;
+            const slides = document.getElementsByClassName("mySlides");
+            const dots = document.getElementsByClassName("dot");
+
+            // Determine the range for the current slideshow
+            const start = n * 6;
+            const end = start + 6;
+
+            // Hide all slides for the current slideshow
+            for (i = start; i < end; i++) {
+                slides[i].style.display = "none";
+            }
+
+            // Remove the "active" class from all dots for the current slideshow
+            for (i = start; i < end; i++) {
+                dots[i - start].className = dots[i - start].className.replace(" active", "");
+            }
+
+            // Show the current slide
+            slides[start + slideIndex].style.display = "block";
+
+            // Add the "active" class to the current dot
+            if (dots.length > 0) {
+                dots[slideIndex % dots.length].className += " active";
+            }
+
+            // Update the slide index
+            slideIndices[n] = (slideIndices[n] + 1) % 6;
+
+            // Change slide every 3 seconds
+            setTimeout(() => showSlides(slideIndices[n], n), 3000);
+        }
+
+        function plusSlides(n, slideshowIndex) {
+            slideIndices[slideshowIndex] += n;
+            showSlides(slideIndices[slideshowIndex], slideshowIndex);
+        }
+
+        // Initialize slides
+        showSlides(slideIndices[0], 0);
+        showSlides(slideIndices[1], 1);
+        showSlides(slideIndices[2], 2);
+    </script>
+</body>
+</html>
+
+
+
+>>>>>>> origin/main
